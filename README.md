@@ -46,6 +46,6 @@ ResultMonad divide(int a, int b) {
 }
 
 int main() {
-    result_unwrao(divide(1, 0)); // panics
+    result_unwrap(divide(1, 0)); // panics
 }
 ```

@@ -18,7 +18,8 @@ FetchContent_Declare(
     GIT_TAG main
 )
 
-FetchContent_MakeAvailable(cease)```
+FetchContent_MakeAvailable(cease)
+```
 
 Then it can be treated as a normal library in your CMakeLists.
 After you've linked it, you merely need to include it in your C code:

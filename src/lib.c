@@ -43,6 +43,7 @@ bool result_is_ok(ResultMonad result) {
 ResultMonad result_map(ResultMonad result, void* (*morphism)(void*)) {
     if (result.status == RESULT_OK) {
         ResultMonad new = {RESULT_OK, morphism(result.value)};
+        return new;
     } else {
         return result;
     }

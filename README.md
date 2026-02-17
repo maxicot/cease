@@ -1,6 +1,6 @@
 # cease
 
-`cease` is a simplistic C23 library for monadic error-handling.
+`cease` is a simplistic C23 library for monadic error handling.
 Refer to `include/cease.h` for documentation.
 
 ### Installation
@@ -49,3 +49,11 @@ int main() {
     result_unwrap(divide(1, 0)); // panics
 }
 ```
+
+### Disadvantages
+
+1. Type-unsafety;
+2. Allocation overhead.
+
+Not the most idiomatic way to handle errors in C, the language also not being particularly suitable for its implementation (at least one that would be any good).
+Advised against in production.
